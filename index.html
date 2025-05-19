@@ -3,104 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hawk Street House LLC</title>
+  <title>Pepe's Tickets LLC</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: #111;
-      color: #f0e6d2;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+      color: #222;
+      scroll-behavior: smooth;
     }
-
     header {
-      background: url('https://source.unsplash.com/1600x600/?architecture,modern-building') no-repeat center center/cover;
+      background: url('https://source.unsplash.com/1600x700/?concert,crowd') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
     }
-
     header h1 {
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.5);
       display: inline-block;
-      padding: 14px 30px;
+      padding: 16px 35px;
       border-radius: 10px;
-      font-size: 34px;
+      font-size: 36px;
     }
-
     nav {
-      background-color: #d4af37;
+      background-color: #222;
       text-align: center;
-      padding: 14px;
+      padding: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
-
     nav a {
-      color: #111;
-      margin: 0 18px;
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 15px;
     }
-
     section {
-      padding: 70px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
-
     section:nth-child(even) {
-      background-color: #1c1c1c;
+      background-color: #e9ecf1;
     }
-
     h2 {
-      color: #d4af37;
+      color: #003366;
+      margin-bottom: 20px;
     }
-
-    .contact-box {
-      background-color: #222;
-      padding: 30px;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
       border-radius: 10px;
-      display: inline-block;
-      border: 1px solid #d4af37;
-      color: #f0e6d2;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
+    .contact-box {
+      background-color: white;
+      padding: 30px;
+      display: inline-block;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
     footer {
-      background-color: #000;
-      color: #aaa;
+      background-color: #111;
+      color: white;
       text-align: center;
       padding: 25px;
       font-size: 14px;
     }
-
     a {
-      color: #f2c94c;
+      color: #0077cc;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Hawk Street House LLC</h1>
-  <p>Precision. Privacy. Property.</p>
+  <h1>Pepe's Tickets LLC</h1>
+  <p>Your VIP Access Starts Here – Sherman Oaks, CA</p>
 </header>
 
 <nav>
   <a href="#about">About</a>
-  <a href="#services">What We Do</a>
+  <a href="#services">Services</a>
+  <a href="#events">Events</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#city">City</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
   <h2>About Us</h2>
-  <p>Hawk Street House LLC is a registered California entity headquartered in <strong>Sherman Oaks, CA</strong>. We support real estate, logistics, and asset-related services in a secure and discrete environment.</p>
+  <p>Pepe's Tickets LLC offers premium ticketing services for top events across the country, with a personalized and secure experience.</p>
 </section>
 
 <section id="services">
   <h2>Our Services</h2>
-  <p>We manage corporate addresses, entity filings, and privacy-first real estate services for select partners across the U.S.</p>
+  <p>VIP bookings, group packages, early access deals, and custom ticket arrangements for concerts, sports, and festivals.</p>
+</section>
+
+<section id="events">
+  <h2>Upcoming Events</h2>
+  <p>Check out our exclusive lineup of shows, tours, and private access experiences, updated weekly.</p>
+</section>
+
+<section id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://source.unsplash.com/800x600/?music,lights" alt="event">
+    <img src="https://source.unsplash.com/800x600/?festival" alt="crowd">
+    <img src="https://source.unsplash.com/800x600/?stage,show" alt="live">
+  </div>
+</section>
+
+<section id="city">
+  <h2>Where We Operate</h2>
+  <p>We are proudly based in <strong>Sherman Oaks, CA</strong>, serving clients locally and nationally with top-tier event solutions.</p>
 </section>
 
 <section id="contact">
-  <h2>Contact</h2>
+  <h2>Contact Us</h2>
   <div class="contact-box">
     <p><strong>Email:</strong> <a href="mailto:richard@hawkstrhouse.shop">richard@hawkstrhouse.shop</a></p>
     <p><strong>Phone:</strong> <a href="tel:+17168694725">716-869-4725</a></p>
@@ -109,7 +139,7 @@
 </section>
 
 <footer>
-  <p>&copy; 2025 Hawk Street House LLC. All rights reserved.</p>
+  <p>&copy; 2025 Pepe's Tickets LLC. All rights reserved.</p>
 </footer>
 
 </body>
